@@ -1,0 +1,21 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Pets
+        a(href="/") Back to homepage
+        form(action="/update-cobj" method="POST")
+            div
+                label(for="name") Name:
+                input(type="text" name="name" required)
+            div
+                label(for="age") Type:
+                input(type="text" name="type" required)
+            div
+                label(for="food") Food:
+                input(type="text" name="food" required)
+            div
+                button(type="submit") Submit
